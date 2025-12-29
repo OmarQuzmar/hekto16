@@ -3,51 +3,174 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container {
-    width: 80%;
+
+.header {
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    
+    
+    
+}
+.header .container {
+    width: 61%;
     margin: auto;
     display: flex;
+    gap: 227px;
     justify-content: space-between;
     
+}
+.header .logo-with-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+}
+a {
+    text-decoration: none;
 }
 ul {
     list-style: none;
 
 }
-a{
+.header .list a{
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #0D0E43;
-    font-weight: 16
+    font-weight: 400;
+    font-size: 16px;
 }
-.header ul {
+.header .list a:hover {
+    color: #FB2E86;
+}
+.header .list .container ul {
     display: flex;
-    gap: 17px;
-    align-items: center;
+    gap: 35px;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-top: 5px;
-    
-    
-}
-.header {
-    margin-top: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    
+        
 }
 
 
-.header button{
+.header button, .footer button{
     border: 0;
     padding: 5px 10px;
     background-color: #FB2E86;
 }
+.header input , .footer input {
+    border: none;
+}
 
-.header form{
+.header form  , .footer form{
     border-right: none;
-    border: 1px solid #E7E6EF;
+    border: 2px solid #E7E6EF;
     display: flex;
-    font-weight: 100
+          
+}
+
+/* ---------------------------------------------footer section---------------------------------------*/
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+.footer .container {
+    width: 61%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEFFB;
+    
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.footer .container .row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
     
     
+}
+@media screen and (min-width:0) and (max-width:500px) {
+.footer .container .row {
+    width: 100%;
+}
     
+}
+@media screen and (min-width:501) and (max-width:800px) {
+    .footer .container .row {
+    width: calc((100%-90px));
+}
+    
+}
+@media screen and (min-width:801) and (max-width:1200px) {
+    .footer .container .row {
+    width: calc((100%-180px)/2);
+}
+    
+}
+@media screen and (min-width:1201) and (max-width:2000px) {
+    .footer .container .row {
+    width: calc((100%-270px)/3);
+}
+    
+}
+.footer .container .row .right-side-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    
+}
+.footer .container .row .right-side-item ul a , .footer .left-side-footer a , .footer .left-side-footer p{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #8A8FB9;
+    
+}
+.footer .rigth-side-footer h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+.footer button {
+    color:#fff;
+    border-radius: 3px;
+    padding: 10px 40px;
+    font-weight: 500;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.footer input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #8A8FB9;
+    padding-left: 15px;
+    
+} 
+ .footer form{
+    border-radius: 2px;
+    border-right: none;
+    border: 0px solid #E7E6EF;
+    display: flex;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.footer .container .left-side-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0D0E43;
 }
